@@ -6,6 +6,9 @@ module.exports = {
       backgroundImage: {
         'bgbanner': "url('../public/bgbanner.jpg')",
       },
+      colors: {
+        'pricing': '#6f6f6f',
+      },
     },
   },
   plugins: [],

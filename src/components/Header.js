@@ -19,7 +19,7 @@ const Header = () => {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-full px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
+            <div className="relative flex h-16 items-center justify-center sm:justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -41,7 +41,7 @@ const Header = () => {
                         href={item.href}
                         className={classNames(
                           item.current ? 'text-black' : 'duration-300 cursor-pointer relative overflow-hidden after:h-[1px] after:w-full after:bottom-0 after:right-full after:bg-black after:absolute hover:after:translate-x-full after:duration-300',
-                          'px-3 py-2 rounded-md text-sm font-medium'
+                          'py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -51,7 +51,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-shrink-0 items-center pr-5">
+              <div className="flex flex-shrink-0 items-center">
                   <img
                     className="block h-8 w-auto lg:hidden"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
